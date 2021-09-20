@@ -1,0 +1,12 @@
+<div class="mt-4">
+    <h2>Blogs</h2>
+{{#each blogs}}
+    <div class="blog">
+        <div class="container">
+            {{ this.id }}) {{ this.title }}
+            <p>{{ this.content }}</p>
+            <p><a class="btn btn-sm btn-dark" href="/blog/{{this.id}}">Open</a></p>
+        </div>
+    </div>
+{{/each}}
+</div>
